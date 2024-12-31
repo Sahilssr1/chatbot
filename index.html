@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Chat App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1 class="logo">ChatGPT App</h1>
+      <ul class="menu">
+        <li><button class="menu-btn active">New Chat</button></li>
+        <li><button class="menu-btn">Saved Chats</button></li>
+        <li><button class="menu-btn">Settings</button></li>
+      </ul>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <div class="main-chat">
+      <header class="chat-header">
+        <h2>AI Chat Assistant</h2>
+      </header>
+
+      <div class="chat-container">
+        <!-- Chat messages will dynamically appear here -->
+      </div>
+
+      <div class="input-container">
+        <div class="image" id="image">
+          <img src="chatbot.png" alt="Image Preview">
+          <input type="file" accept="image/*" hidden>
+        </div>
+        <input type="text" id="prompt" placeholder="Type your message here...">
+        <button id="submit">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <footer class="chat-footer">
+    <p>Powered by AI &copy; 2024</p>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
